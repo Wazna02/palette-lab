@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Palette Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Palette Lab<span>generate, lock, check contrast, export</span></h1>
+  <div class="ctl">
+    <label class="ctl">Harmony
+      <select id="mode" aria-label="Harmony mode">
+        <option value="analogous">Analogous</option>
+        <option value="complementary">Complementary</option>
+        <option value="triad">Triad</option>
+        <option value="mono">Monochrome</option>
+        <option value="random">Random</option>
+      </select>
+    </label>
+    <button id="gen" class="p">Generate<kbd>Space</kbd></button>
+    <button id="save">Save</button>
+    <button id="css">Copy CSS</button>
+  </div>
+</header>
+<main id="main" aria-label="Palette"></main>
+<footer id="saved"></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
